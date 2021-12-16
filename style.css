@@ -39,6 +39,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 50%;
 }
 
 #wrapper {
@@ -105,7 +106,7 @@ h1 {
 	color: #fff;
 	font-size: 35px;
 	font-family: 'Cabin';
-	text-align: justify;
+	text-align: center;
 	line-height: 50px;
 }
 
@@ -177,4 +178,54 @@ h1 {
 	margin: 0;
 	font-size: 20px;
 	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+																											RESPONSIVENESS
+*/
+
+@media screen and (max-width: 1372px) {
+	.center {
+		width: 60%;
+	}
+}
+@media screen and (max-width: 857px) {
+	.center {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 733px) {
+	#header-section .center h3 {
+		font-size: 25px;
+		line-height: 35px;
+	}
+}
+@media screen and (max-width: 477px) {
+	#header-section .center h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
