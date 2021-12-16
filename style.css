@@ -85,7 +85,8 @@ section {
 #header-section {
 	height: 100vh;
 	position: relative;
-	background-image: url('images/doftis_background.jpg');
+	background-image: url('images/doftis_background-2.jpg');
+	background-position: 50% 50%;
 }
 
 #background-filter {
