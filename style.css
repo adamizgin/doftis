@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 * {
 	margin:  0;
 	padding: 0;
@@ -94,6 +98,18 @@ h1 {
 	text-transform: uppercase;
 }
 
+#header-section .center {
+	z-index: 2;
+}
+#header-section .center h3 {
+	color: #fff;
+	font-size: 35px;
+	font-family: 'Cabin';
+	text-align: justify;
+	line-height: 50px;
+}
+
+
 
 
 
@@ -123,4 +139,42 @@ h1 {
 }
 #header * {
 	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+																											HEADER-SECTION BUTTON
+*/
+
+#see-products {
+	background: linear-gradient(-145deg, #ffd564, #ffe38c, #ffc204, #ffe081, #ffc612, #ffe289, #ffc309);
+	border: none;
+	padding: 15px 25px;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 50px;
+	box-shadow: 1px 1px 5px 0 #0005;
+	transition: all 200ms ease-in-out;
+}
+#see-products:hover {
+	box-shadow: 2px 2px 5px 0 #000a;
+}
+#see-products:active {
+	filter: brightness(0.8);
+}
+
+#see-products p {
+	line-height: normal;
+	margin: 0;
+	font-size: 20px;
+	color: #000;
 }
