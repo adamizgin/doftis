@@ -208,7 +208,7 @@ h1 {
 
 #product-section {
 	background: #000;
-	height: calc(100vh - 75px);
+	min-height: calc(100vh - 75px);
 	position: relative;
 	overflow: hidden;
 }
