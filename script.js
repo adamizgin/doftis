@@ -3,7 +3,7 @@ $(document).ready(function() {
 		$('#outside-main').show();
 		setTimeout(function() {
 			$([document.documentElement, document.body]).animate({
-		        scrollTop: $("#product-section").offset().top - $('#header').height() - 40
+		        scrollTop: $("#product-section").offset().top - $('#header').height()
 		    }, 600);
 		    setTimeout(function() {
 			    $('#ps-right').css({
@@ -22,8 +22,8 @@ $(document).ready(function() {
 				    $('#ps-left').css({
 				    	'opacity': '1'
 				    });
-				}, 300);
-			}, 300);
+				}, 200);
+			}, 200);
 		});
 	});
 });
