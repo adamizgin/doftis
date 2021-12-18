@@ -3,7 +3,7 @@ $(document).ready(function() {
 		$('#outside-main').show();
 		setTimeout(function() {
 			$([document.documentElement, document.body]).animate({
-		        scrollTop: $("#product-section").offset().top - $('#header').height()
+		        scrollTop: $("#product-section").offset().top - 75+'px'
 		    }, 600);
 		    setTimeout(function() {
 			    $('#ps-right').css({
