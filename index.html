@@ -5,408 +5,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<link rel="icon" href="https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png">
+	<!-- <link rel="icon" href="https://i.ibb.co/q1c8z7t/IZGIN-Collection-1.png"> -->
 	<script src="https://kit.fontawesome.com/b48589663c.js" crossorigin="anonymous"></script>
 	<script src="script.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="style.css">
-	<title>Izgin Collection</title>
-	<meta name="google-site-verification" content="_o9CGQH2bSAfHKnXO6U-segFW0gxdMuxRuS3NcK695M" />
-	<meta name="description" content="Aramean/Assyrian shop that sells Christian paintings. Such as the Lord's prayer in Aramaic, usually with a golden color and a modern yet traditional frame.">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-210324658-1">
-	</script>
+	<title>Doftis</title>
 </head>
 <body>
 
-	<!-- <div id="maintenance" style="width:100vw;height:100vh;position:fixed;z-index:1000;top:0;left:0;background:#fff;">
-		<h1 style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;font-weight:400;"><b>IZGIN Collection</b> is currently under maintenance.</h1>
-	</div> -->
-
 	<div id="wrapper">
-		<div id="pages">
-			<div id="loading-page" style="width:100vw;height:100vh;position:absolute;top:0;left:0;background:#000;z-index: 101;"></div>
-
-			<div id="menu" class="no-select">
-				<div id="menu-close" onclick="closeMenu();">
-					<div class="close-line" id="close1"></div>
-					<div class="close-line" id="close2"></div>
-				</div>
-				<div id="menu-content">
-					<ul>
-						<li id="home-button" onclick="changePage();currentPage = '#home-page'; closeMenuButton();">
-							<i class="fas fa-home"></i>Home
-						</li>
-						<hr>
-						<li id="products-button" onclick="changePage();currentPage = '#products-page'; closeMenuButton();">
-							<i class="fas fa-shopping-cart"></i>Products
-						</li>
-						<hr>
-						<li id="contact-button" onclick="changePage();currentPage = '#contact-page'; closeMenuButton();">
-							<i class="fas fa-phone-alt"></i>Contact
-						</li>
-						<hr>
-						<li id="help-button" onclick="changePage();currentPage = '#help-page'; closeMenuButton();">
-							<i class="fas fa-question-circle"></i>FAQ <span style="font-size: 16px; color: #345;">(Help)</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div id="menu-stop"></div>
-
-			<div id="header" class="no-select">
-				<div id="ham">
-					<div id="ham1" class="hamLine"></div>
-					<div id="ham2" class="hamLine"></div>
-					<div id="ham3" class="hamLine"></div>
-				</div>
-				<h1>IZGIN Collection</h1>
-				<div class="kunosho">
-					<h3>ܟܘܢܫܐ</h3>
-					<div></div>
-				</div>
-
-				<div class="header-border"></div>
+		<section id="header-section">
+			<div id="header">
+				<h1>Doftis</h1>
 			</div>
 
-			<div class="main" id="home-page">
-				<div class="content">
-					<h1>Welcome to IZGIN Collection!</h1>
-					<br>
-					<p><b>IZGIN Collection</b> is a collection of products, such as prayers in Aramaic (the language of Jesus Christ). But also sell other products (which for the most part target the Aramean people).</p>
-					<br>
-					<p>The products are all designed by me and made of the highest quality. The main font used in the products is called Serto BeQaco and made out of my handwriting.</p>
-					<br><br>
-					<button id="home-coll" class="no-select" onclick="currentPage = '#products-page';changePage();">SEE COLLECTION</button>
-				</div>
+			<div id="background-filter"></div>
 
-				<div class="content" style="margin-top: 80px;">
-					<p>Contact us:</p>
-					<br>
-					<div class="card" id="home-card">
-						<div class="card-icon"></div>
-						<h5>Izgin.Collection</h5>
-						<div class="card-buttons">
-							<a href="https://www.instagram.com/izgin.collection/" target="_blank">
-								<button class="no-select">Instagram</button>
-							</a>
-							<a href="mailto:izgin.collection@gmail.com?subject" target="_blank">
-								<button class="no-select">Mail</button>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-				Choose product
-
-
-
-
-
-
-
-
-
-
-
-
-
-			 -->
-
-			<div class="main" id="products-page">
-				<em style="color: #345;">Below you will see previews for each product and its category. The products could be available in different colours, to see more details about a certain product, click on it.</em>
-				<br><br>
-				<h2>Decoration</h2>
-				<hr><br>
-
-				<a href="products/product1.html" class="product-link">
-					<div class="preview no-select" id="preview1" onclick="product = 1;chooseProduct();standard();">
-						<img src="images/Syriac_aramaic_lords_prayer_abun_dbashmayo_2.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>Lord's prayer</h4>
-							<div class="preview-text">
-								<p class="abun"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product2.html" class="product-link">
-					<div class="preview no-select" id="preview2" onclick="product = 2;chooseProduct();standard();">
-						<img src="images/lords_prayer_aramaic_cross_on_wall_2.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>Lord's prayer – Cross shaped</h4>
-							<div class="preview-text">
-								<p class="abun2"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product3.html" class="product-link">
-					<div class="preview no-select" id="preview3" onclick="product = 3;chooseProduct();semiPremium();">
-						<img src="images/Mary_and_Jesus_icon_aramaic_2.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>Jesus and Mary – Choose your verse</h4>
-							<div class="preview-text">
-								<p class="abun3"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price semi_premium-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-semi_premium"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product4.html" class="product-link">
-					<div class="preview no-select" id="preview4" onclick="product = 4;chooseProduct();standard();">
-						<img src="images/handwritten_lords_prayer_standing_in_room_2.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>HANDWRITTEN – Lord's prayer standing</h4>
-							<div class="preview-text">
-								<p class="abun4"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product5.html" class="product-link">
-					<div class="preview no-select" id="preview5" onclick="product = 5;chooseProduct();standard();">
-						<img src="images/Lords_prayer_handwritten_light_gold_standing_in_room_1.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>HANDWRITTEN – Lord's prayer light gold</h4>
-							<div class="preview-text">
-								<p class="abun5"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-
-				<a href="products/product6.html" class="product-link">
-					<div class="preview no-select" id="preview6" onclick="product = 6;chooseProduct();standard();">
-						<img src="images/john_3_16_2.jpg" alt="">
-						<div class="preview-bottom">
-							<h4>John 3:16 Bible verse with Cross</h4>
-							<div class="preview-text">
-								<p class="abun6"></p>
-							</div>
-							<span class="preview-price"><span class="orig-price price standard-price"></span> <span class="rabatt-span">&nbsp;two for <span class="price rabatt-price-standard"></span></span></span>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="main" id="contact-page">
-				<h2>Contact</h2>
-				<hr>
-				<p>You can contact us via Instagram or Email</p>
-				<p>Website programmed and designed by Adam Izgin</p>
-				<br>
-
-				<div class="card" id="home-card">
-					<div class="card-icon"></div>
-					<h5>Izgin.Collection</h5>
-					<div class="card-buttons">
-						<a href="https://www.instagram.com/izgin.collection/" target="_blank">
-							<button class="no-select">Instagram</button>
-						</a>
-						<a href="mailto:izgin.collection@gmail.com?subject" target="_blank">
-							<button class="no-select">Mail</button>
-						</a>
-					</div>
-				</div>
-
-				<div class="card" id="home-card">
-					<div class="card-icon"></div>
-					<h5>adayizgin</h5>
-					<div class="card-buttons">
-						<a href="https://www.instagram.com/adayizgin/" target="_blank">
-							<button class="no-select">Instagram</button>
-						</a>
-						<a href="mailto:adamizgin.jobb@gmail.com?subject" target="_blank">
-							<button class="no-select">Mail</button>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="main" id="help-page">
-				<h3>Frequently asked questions</h3>
-				<br>
-				<h2>How do I order a product?</h2>
-				<hr>
-				<p>Orders are made via Instagram's Direct Message to our official Instagram account <a href="https://www.instagram.com/izgin.collection/" target="_blank">@izgin.collection</a> or send a private message to <a href="https://www.facebook.com/adam.izgin/" target="_blank">adam.izgin</a> on FaceBook. Tell us which product you would like to order (plus eventual additions) and where to send the product. <br> An example of an order would be:</p>
-				<p style="background: #f8f8f8; padding: 15px; text-align: initial;">– Hi! I'd like to purchase the Lord's prayer in acrylic aluminium glass, 30×45cm with an invisible wall mount.</p>
-
-				<br><br>
-
-				<h2>Which payment method is acceptable?</h2>
-				<hr>
-				<p><b>PayPal</b>, or <b>Swish</b> if you live in Sweden.</p>
-
-				<br><br>
-
-				<h2>When will my product be delivered?</h2>
-				<hr>
-				<p>It usually takes 9 business days for the products to be delivered. But it can be different depending on in which country you live.</p>
-
-				<br><br>
-
-				<h2>How much does the shipping cost?</h2>
-				<hr>
-				<p>The shipping is free if you live in Sweden. If you live inside the EU, the shipping amount will be from 15€ to 20€. Shipping outside of the EU is currently not possible.</p>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- 
-
-
-	
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-													COMPUTER
-
-
-
-	 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div class="main-computer computer" id="home-page-computer">
-		<div id="comp-header">
-			<img src="images/izgin_collection_logo_transparent.png" alt="" id="comp-logo">
-			<div id="header-content">
-				<a href="index.html">
-					<div class="header-button">
-						<h3>Home</h3>
-						<h3 class="header-hidden">Home</h3>
-						<div class="header-animation header-animation-left"></div>
-						<div class="header-animation header-animation-right"></div>
-					</div>
-				</a>
-
-				<a href="products/products.html">
-					<div class="header-button">
-						<h3>Products</h3>
-						<h3 class="header-hidden">Products</h3>
-						<div class="header-animation header-animation-left"></div>
-						<div class="header-animation header-animation-right"></div>
-					</div>
-				</a>
-
-				<a href="contact.html">
-					<div class="header-button">
-						<h3>Contact</h3>
-						<h3 class="header-hidden">Contact</h3>
-						<div class="header-animation header-animation-left"></div>
-						<div class="header-animation header-animation-right"></div>
-					</div>
-				</a>
-
-				<a href="faq.html">
-					<div class="header-button">
-						<h3>FAQ (Help)</h3>
-						<h3 class="header-hidden">FAQ (Help)</h3>
-						<div class="header-animation header-animation-left"></div>
-						<div class="header-animation header-animation-right"></div>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		<div id="computer-background"></div>
-		<div class="content">
 			<div class="center">
-				<h2>Welcome to IZGIN Collection!</h2>
-				<p><b>IZGIN Collection</b> is a collection of products, such as prayers in Aramaic (the language of Jesus Christ). But also sell other products (which for the most part target the Aramean people).</p>
-				<br>
-				<p>The products are all designed by me and made of the highest quality. The main font used in the products is called Serto BeQaco and made out of my handwriting.</p>
+				<h3>Är du trött på ditt illaluktande rum? Med Doftis kan hela familjen njuta av ett fräscht hus.</h3>
 
 				<center>
-					<a href="products/products.html">
-						<button id="see-products">
-							<p>See products</p>
+					<a href="#">
+						<button id="see-product">
+							<p>Se produkten</p>
 						</button>
 					</a>
 				</center>
 			</div>
-		</div>
-	</div>
+		</section>
 
-	<div id="rabatt">
-		<div id="rabatt-container">
-			<div id="rabatt-close">
-				<div class="rabatt-close-line"></div>
-				<div class="rabatt-close-line"></div>
-			</div>
-			<h2>CHRISTMAS SALE!</h2>
-			<hr>
-			<br>
-			<h4>Only now! Christmas sale: <b>10% off on every product</b> if you order more than one.</h4>
+		<div id="outside-main">
+
+			<section id="product-section">
+
+				<div id="computer-ps">
+					<div id="ps-left">
+						<h2>Exempel på titel!</h2>
+						<h3>Här kan marknadsföringen av produkten stå – samt övrig information.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id hendrerit nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas semper volutpat lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a porta nunc. Vestibulum eu sem odio. Phasellus congue neque ligula, a consequat mauris dapibus non.</p>
+					</div>
+					<div id="ps-right"></div>
+				</div>
+
+				<div id="mobile-ps">
+					<div id="mobile-ps-img-holder">
+						<img src="images/product.png" alt="" id="mobile-ps-img">
+					</div>
+					<div id="mobile-ps-text-holder">
+						<h2>Exempel på titel!</h2>
+						<h3>Här kan marknadsföringen av produkten stå – samt övrig information.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id hendrerit nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas semper volutpat lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a porta nunc. Vestibulum eu sem odio. Phasellus congue neque ligula, a consequat mauris dapibus non.</p>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 	
