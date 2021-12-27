@@ -274,7 +274,11 @@ h1 {
 	padding: 30px;
 }
 
-
+#canvas {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
 
 
@@ -334,6 +338,13 @@ h1 {
 	}
 	#product-section {
 		overflow: initial;
+	}
+
+	.canvas-mobile {
+		display: block;
+	}
+	.canvas-computer {
+		display: none;
 	}
 }
 @media screen and (max-width: 500px) {
