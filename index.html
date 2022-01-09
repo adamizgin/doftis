@@ -17,12 +17,24 @@
 
 	</script>
 </head>
-<body>
+<body onscroll="scrolling_effect();">
 
 	<div id="wrapper">
 		<section id="header-section">
 			<div id="header">
 				<h1>Doftis</h1>
+
+				<div id="header-right">
+					<div class="header-button see-info" onclick="see_info();">
+						<h2>INFO</h2>
+					</div>
+					<div class="header-button" id="order-header-button">
+						<h2>BESTÄLL</h2>
+					</div>
+					<div class="header-button">
+						<h2>KONTAKT</h2>
+					</div>
+				</div>
 			</div>
 
 			<div id="background-filter"></div>
@@ -32,7 +44,7 @@
 
 				<center>
 					<a href="#">
-						<button id="see-product">
+						<button class="see-info" id="see-info" onclick="see_info();">
 							<p>Se produkten</p>
 						</button>
 					</a>
@@ -42,7 +54,7 @@
 
 		<div id="outside-main">
 
-			<section id="product-section">
+			<section id="info-section">
 
 				<div id="computer-ps">
 					<div id="ps-left">
@@ -67,6 +79,60 @@
 						<p>Harke këpxu këṯwutu u mede d-ëbcutu, xud u mamlo cal amnaṯxu ya ste cal a medone d-këmzabnutu.</p>
 						<p>ܟܬܘܒ ܗܪܟܐ ܡܕ̈ܡܐ ܕܒܥܝܢ ܐܢܬܘܢ܆ ܐܝܟ ܡܡܠܠܐ ܥܠ ܐܡܢܟܘܢ ܐܘ ܐܦ ܥܠ ܡܕ̈ܡܝܢ ܕܡܙܒܢܝܢ ܐܢܬܘܢ.</p>
 					</div>
+				</div>
+			</section>
+
+			<section id="product-section">
+				<div id="my-store-69863611"></div>
+				<div>
+					<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?69863611&data_platform=code&data_date=2022-01-08" charset="utf-8"></script>
+					<script type="text/javascript"> 
+						window.ec=window.ec||{};
+						window.ec.storefront=window.ec.storefront||{};
+						window.ec.storefront.enable_navigation=true;
+						window.ec.storefront.product_details_layout="TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT";
+						window.ec.storefront.product_details_gallery_layout="SINGLE_IMAGE";
+						window.ec.storefront.product_details_two_columns_with_right_sidebar_show_product_description_on_sidebar=true;
+						window.ec.storefront.product_details_two_columns_with_left_sidebar_show_product_description_on_sidebar=false;
+						window.ec.storefront.product_details_show_product_name=true;
+						window.ec.storefront.product_details_show_breadcrumbs=false;
+						window.ec.storefront.product_details_show_product_sku=false;
+						window.ec.storefront.product_details_show_product_price=true;
+						window.ec.storefront.product_details_show_in_stock_label=true;
+						window.ec.storefront.product_details_show_number_of_items_in_stock=true;
+						window.ec.storefront.product_details_show_qty=true;
+						window.ec.storefront.product_details_show_wholesale_prices=true;
+						window.ec.storefront.product_details_show_product_options=true;
+						window.ec.storefront.product_details_show_product_description=true;
+						window.ec.storefront.product_details_show_share_buttons=false;
+						window.ec.storefront.product_details_position_product_name=100;
+						window.ec.storefront.product_details_position_breadcrumbs=200;
+						window.ec.storefront.product_details_position_product_sku=300;
+						window.ec.storefront.product_details_position_product_price=400;
+						window.ec.storefront.product_details_position_product_options=undefined;
+						window.ec.storefront.product_details_position_buy_button=600;
+						window.ec.storefront.product_details_position_wholesale_prices=700;
+						window.ec.storefront.product_details_position_product_description=800;
+						window.ec.storefront.product_details_position_share_buttons=900;
+						window.ec.storefront.product_details_position_subtitle=500;
+						window.ec.storefront.product_details_show_subtitle=true;
+						xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","defaultProductId=431545687","id=my-store-69863611");
+					</script>
+				</div>
+
+
+				<hr>
+
+
+				<div id="calculate-shipping-section">
+					<h4 style="font-weight: 400;font-size: 24px;">Beräknad ankomst:</h4>
+					<button id="calculate" onclick="calculateDate(35);">
+						<p>Beräkna</p>
+					</button>
+
+					<br><br><br>
+
+					<p style="font-size: 20px;display: none;" id="calculated-date-p">Varan bör anlända innan&nbsp;<span id="calculated-date" style="font-weight: 600;"></span></p>
 				</div>
 			</section>
 		</div>
