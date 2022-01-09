@@ -9,6 +9,7 @@
 	color: #000;
 	-webkit-tap-highlight-color: transparent;
 	tap-highlight-color: transparent;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -34,6 +35,13 @@ h3 {
 
 a {
 	color: #00f;
+}
+
+hr {
+	border: none;
+	width: 100%;
+	border-top: 1px solid #0002;
+	margin-bottom: 25px;
 }
 
 .center {
@@ -82,14 +90,11 @@ section {
 
 */
 
-#outside-main {
-	display: none;
-}
 
 #header-section {
 	height: 100vh;
 	position: relative;
-	background-image: url('images/doftis_background-2.jpg');
+	background-image: url('images/doftis-background-2.jpg');
 	background-position: 50% 50%;
 }
 
@@ -99,11 +104,6 @@ section {
 	height: 100%;
 	position: absolute;
 	z-index: 1;
-}
-
-h1 {
-	font-size: 30px;
-	text-transform: uppercase;
 }
 
 #header-section .center {
@@ -138,7 +138,7 @@ h1 {
 #header {
 	width: 100%;
 	height: auto;
-	background: #568d;
+	background: #556688f8;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -149,6 +149,40 @@ h1 {
 }
 #header * {
 	color: #fff;
+}
+
+h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#header-right {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: default;
+}
+
+.header-button {
+	height: 100%;
+	display: inline-block;
+	padding: 20px 10px;
+	cursor: pointer;
+	border-right: 1px solid #fff1;
+	background: transparent;
+	transition: background 125ms ease-in-out;
+}
+
+.header-button:last-child {
+	border-right: none;
+}
+
+.header-button:hover {
+	background: #1112;
+}
+.header-button:active {
+	background: #1113;
 }
 
 
@@ -167,7 +201,7 @@ h1 {
 																											HEADER-SECTION BUTTON
 */
 
-#see-product {
+#see-info {
 	background: linear-gradient(-145deg, #ffd564, #ffe38c, #ffc204, #ffe081, #ffc612, #ffe289, #ffc309);
 	border: none;
 	padding: 15px 25px;
@@ -177,14 +211,14 @@ h1 {
 	box-shadow: 1px 1px 5px 0 #0005;
 	transition: all 200ms ease-in-out;
 }
-#see-product:hover {
+#see-info:hover {
 	box-shadow: 2px 2px 5px 0 #000a;
 }
-#see-product:active {
+#see-info:active {
 	filter: brightness(0.8);
 }
 
-#see-product p {
+#see-info p {
 	line-height: normal;
 	margin: 0;
 	font-size: 20px;
@@ -203,17 +237,17 @@ h1 {
 
 
 /*
-																											PRODUCT-SECTION
+																											INFO-SECTION
 */
 
-#product-section {
+#info-section {
 	background: #000;
 	min-height: calc(100vh - 75px);
 	position: relative;
 	overflow: hidden;
 }
 
-#product-section * {
+#info-section * {
 	color: #fff;
 }
 
@@ -295,6 +329,79 @@ h1 {
 
 
 
+/*      PRODUCT      */
+
+#product-section {
+	background: #fff;
+	padding: 25px;
+}
+
+.form-control__button {
+	background-color: #36d!important;
+}
+
+.form-control__button span {
+	color: #fff;
+}
+
+.product-details__product-price-taxes {
+	color: #666;
+	text-decoration: line-through;
+}
+
+#shipping_button {
+	border: none!important;
+	padding: 5px 10px!important;
+	background: #36c!important;
+	border-radius: 3px;
+	transition: all 150ms ease-in-out!important;
+}
+#shipping_button:active {
+	background: #14a!important;
+}
+
+#shipping_button p {
+	color: #fff;
+	font-size: 16px;
+}
+
+#product-section hr {
+	margin-bottom: 65px;
+}
+
+#calculate {
+	background: #36c;
+	border: none;
+	padding: 10px 15px;
+	margin-top: 25px;
+	border-radius: 2px;
+	box-shadow: none;
+	transition: all 100ms ease-in-out;
+}
+#calculate:active {
+	background: #25b;
+	box-shadow: 0 0 5px #0003;
+}
+
+#calculate p {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,6 +435,9 @@ h1 {
 	#ps-left p {
 		font-size: 16px;
 	}
+	#header-right {
+		display: none;
+	}
 }
 @media screen and (max-width: 640px) {
 	#computer-ps {
@@ -336,7 +446,7 @@ h1 {
 	#mobile-ps {
 		display: block;
 	}
-	#product-section {
+	#info-section {
 		overflow: initial;
 	}
 
