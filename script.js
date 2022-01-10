@@ -1,9 +1,6 @@
 var rabatt = true;
 
 $(() => {
-	setTimeout(function() {
-		$(window).scrollTop(0, 0);
-	}, 100);
 
 	$('.see-info').click(() => {
 		$([document.documentElement, document.body]).animate({
@@ -11,7 +8,7 @@ $(() => {
 	    }, 600);
 	});
 
-	$('#order-header-button').click(() => {
+	$('.order-header-button').click(() => {
 		$([document.documentElement, document.body]).animate({
 	        scrollTop: $("#product-section").offset().top - 75+'px'
 	    }, 600);
@@ -38,6 +35,11 @@ $(() => {
 			});
 		}
 	}, 4000);
+
+	setTimeout(() => {
+		$(window).scrollTop(0, 0);
+		$('#loading-page').hide();
+	}, 1000);
 
 });
 
